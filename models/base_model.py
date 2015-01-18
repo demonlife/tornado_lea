@@ -44,7 +44,8 @@ mysql_con = torndb.Connection(
 redis_con = redis.StrictRedis(
     host = options.redis_host,
     port = options.redis_port,
-    db = options.redis_db
+    db = options.redis_db,
+    #password = xxx #如果redis设置了密码
 )
 
 class DBBaseModel(object):
